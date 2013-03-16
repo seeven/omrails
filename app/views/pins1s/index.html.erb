@@ -1,0 +1,21 @@
+<h1>Listing pins1s</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pins1s.each do |pins1| %>
+  <tr>
+    <td><%= link_to 'Show', pins1 %></td>
+    <td><%= link_to 'Edit', edit_pins1_path(pins1) %></td>
+    <td><%= link_to 'Destroy', pins1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pins1', new_pins1_path %>
